@@ -1,17 +1,356 @@
 ---
-
+// منطق سایت
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>زهرا بویری</h1>
-	</body>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>آشیان کوچک من | زهرا قدیانی</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class="content-wrapper">
+      
+      <!-- هدر بالا با دکمه‌های تم و زبان -->
+      <header class="top-header">
+        <button id="theme-toggle" class="header-btn" title="تغییر تم">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="lang-toggle" class="header-btn lang-btn" title="English">
+          <span class="lang-text">English</span>
+        </button>
+      </header>
+      
+      <div class="profile-header">
+        <img src="/hero.jpg" alt="زهرا قدیانی" class="profile-img" />
+        <h1 data-fa="زهرا قدیانی" data-en="Zahra Ghadyani">زهرا قدیانی</h1>
+      </div>
+      
+      <hr class="divider" />
+      
+      <section class="about-section">
+        <h2 data-fa="درباره من" data-en="About Me">درباره من</h2>
+        <p data-fa="به آشیان کوچکِ من خوش آمدید. من زهرا قدیانی هستم. اینجا پناهگاه واژه‌های من است؛ فضایی برای اشتراک‌گذاریِ قصه‌ها، نقدها و نگاهی که به جهان دارم. خوشحالم که در این گوشه‌ی دنج از دنیای کلمات، هم‌قدمِ من هستید." data-en="Welcome to my little nest. I am Zahra Ghadyani. This is my sanctuary of words; a space for sharing stories, critiques, and my view of the world. I'm glad you are walking alongside me in this cozy corner of the world of words.">به آشیان کوچکِ من خوش آمدید. من زهرا قدیانی هستم. اینجا پناهگاه واژه‌های من است؛ فضایی برای اشتراک‌گذاریِ قصه‌ها، نقدها و نگاهی که به جهان دارم. خوشحالم که در این گوشه‌ی دنج از دنیای کلمات، هم‌قدمِ من هستید.</p>
+      </section>
+      
+      <hr class="divider" />
+      
+      <section class="works-section">
+        <h2 data-fa="نوشته‌ها" data-en="Writings">نوشته‌ها</h2>
+        
+        <article class="work-item">
+          <h3 data-fa="مینیمال" data-en="Minimal">مینیمال</h3>
+          <p class="poem" data-fa="نمی‌دانم چرا… اما دوستت دارم مثل بارانی که علت باریدنش را هیچ ابری نمی‌داند." data-en="I don't know why… but I love you like a rain whose reason for falling no cloud knows.">نمی‌دانم چرا… اما دوستت دارم مثل بارانی که علت باریدنش را هیچ ابری نمی‌داند.</p>
+          <p class="author" data-fa="قدیانی" data-en="Ghadyani">قدیانی</p>
+        </article>
+        
+        <article class="work-item">
+          <h3 data-fa="دلنوشته" data-en="Musing">دلنوشته</h3>
+          <p class="prose" data-fa="روزی به آرامی می‌فهمی در این دنیا هیچ دستی جز دستِ خودت آن‌قدر ماندگار نیست که تمام راه را با تو بیاید. آدم‌ها می‌آیند، دل را گرم می‌کنند، قدم‌به‌قدم کنارت راه می‌روند؛ اما وقتی مسیر شیب می‌گیرد، هرکس تا همان‌جایی می‌ماند که توانش اجازه می‌دهد." data-en="One day you gently realize that in this world, no hand but your own is lasting enough to walk the entire path with you. People come, warm your heart, walk step by step beside you; but when the path slopes, each stays only as long as their strength allows.">روزی به آرامی می‌فهمی در این دنیا هیچ دستی جز دستِ خودت آن‌قدر ماندگار نیست که تمام راه را با تو بیاید. آدم‌ها می‌آیند، دل را گرم می‌کنند، قدم‌به‌قدم کنارت راه می‌روند؛ اما وقتی مسیر شیب می‌گیرد، هرکس تا همان‌جایی می‌ماند که توانش اجازه می‌دهد.</p>
+          <p class="author" data-fa="قدیانی" data-en="Ghadyani">قدیانی</p>
+        </article>
+        
+        <article class="work-item">
+          <h3 data-fa="دلنوشته ادبی" data-en="Literary Musing">دلنوشته ادبی</h3>
+          <p class="poem" data-fa="در کوه، هزاران قدم تو را به خودت می‌رساند. هر قله، آینه‌ای است برای روحِ خسته‌ات." data-en="In the mountains, thousands of steps lead you back to yourself. Each peak is a mirror for your weary soul.">در کوه، هزاران قدم تو را به خودت می‌رساند. هر قله، آینه‌ای است برای روحِ خسته‌ات.</p>
+          <p class="author" data-fa="قدیانی" data-en="Ghadyani">قدیانی</p>
+        </article>
+      </section>
+      
+      <hr class="divider" />
+      
+      <section class="contact-section">
+        <h2 data-fa="ارتباط با من" data-en="Contact Me">ارتباط با من</h2>
+        <div class="social-links">
+          <a href="https://t.me/c/4460164472/696/1581" target="_blank" class="social-btn" data-fa="تلگرام" data-en="Telegram">تلگرام</a>
+          <a href="https://instagram.com/Z_.ghadyani" target="_blank" class="social-btn" data-fa="اینستاگرام" data-en="Instagram">اینستاگرام</a>
+        </div>
+      </section>
+      
+      <footer>
+        <p data-fa="تمامی حقوق متعلق به زهرا قدیانی است" data-en="All rights reserved by Zahra Ghadyani">تمامی حقوق متعلق به زهرا قدیانی است &copy; 2024</p>
+      </footer>
+    </main>
+    
+    <script is:inline>
+      // تغییر تم دارک/لایت
+      const themeBtn = document.getElementById('theme-toggle');
+      const themeIcon = document.querySelector('.theme-icon');
+      let isDark = true;
+      
+      themeBtn.addEventListener('click', () => {
+        isDark = !isDark;
+        document.body.classList.toggle('light-mode');
+        themeIcon.textContent = isDark ? '🌙' : '☀️';
+      });
+      
+      // تغییر زبان فارسی/انگلیسی
+      const langBtn = document.getElementById('lang-toggle');
+      const langText = document.querySelector('.lang-text');
+      let isFa = true;
+      
+      langBtn.addEventListener('click', () => {
+        isFa = !isFa;
+        document.documentElement.lang = isFa ? 'fa' : 'en';
+        document.documentElement.dir = isFa ? 'rtl' : 'ltr';
+        langText.textContent = isFa ? 'English' : 'فارسی';
+        
+        document.querySelectorAll('[data-fa]').forEach(el => {
+          el.textContent = isFa ? el.dataset.fa : el.dataset.en;
+        });
+      });
+    </script>
+    
+    <style>
+      :root {
+        --bg-page: #1a2840;
+        --bg-content: #243355;
+        --bg-card: #2a3a5f;
+        --text-primary: #e8dcc4;
+        --text-muted: #b8c2d6;
+        --accent: #b86a2c;
+        --accent-light: #d4853a;
+        --divider: #4b6969;
+      }
+
+      body.light-mode {
+        --bg-page: #e8e4dc;
+        --bg-content: #f5f1e8;
+        --bg-card: #ffffff;
+        --text-primary: #2a1f17;
+        --text-muted: #5a4536;
+        --accent: #b86a2c;
+        --accent-light: #d4853a;
+        --divider: #c5b8a0;
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        font-family: 'Vazirmatn', Tahoma, sans-serif;
+        background-color: var(--bg-page);
+        color: var(--text-primary);
+        line-height: 2;
+        font-weight: 300;
+        min-height: 100vh;
+        padding: 30px 20px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .content-wrapper {
+        max-width: 750px;
+        margin: 0 auto;
+        background-color: var(--bg-content);
+        border-radius: 16px;
+        padding: 55px 55px 30px;
+        box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+        position: relative;
+        transition: background-color 0.3s;
+      }
+
+      /* هدر بالا با دکمه‌های تم و زبان */
+      .top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 25px;
+        left: 35px;
+        right: 35px;
+        z-index: 10;
+      }
+
+      .header-btn {
+        background: transparent;
+        border: 1.5px solid var(--accent);
+        color: var(--accent);
+        border-radius: 25px;
+        padding: 8px 20px;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 0.9rem;
+        transition: all 0.3s;
+      }
+
+      .header-btn:hover {
+        background: var(--accent);
+        color: #fff;
+      }
+
+      .theme-icon {
+        font-size: 1.1rem;
+      }
+
+      .lang-btn {
+        font-weight: 500;
+      }
+
+      .profile-header {
+        text-align: center;
+        padding: 50px 0 5px;
+      }
+
+      .profile-img {
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid var(--accent);
+        display: block;
+        margin: 0 auto 30px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+      }
+
+      h1 {
+        font-size: 2.6rem;
+        color: #ffffff;
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+
+      body.light-mode h1 {
+        color: #2a1f17;
+      }
+
+      h2 {
+        color: var(--accent);
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 25px;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+
+      h3 {
+        color: #ffffff;
+        font-size: 1.15rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+
+      body.light-mode h3 {
+        color: #2a1f17;
+      }
+
+      .divider {
+        border: none;
+        height: 1px;
+        background-color: var(--divider);
+        margin: 45px 0;
+        opacity: 0.6;
+      }
+
+      section {
+        margin-bottom: 10px;
+      }
+
+      .about-section p {
+        text-align: justify;
+        color: var(--text-primary);
+        font-size: 1.05rem;
+        line-height: 2.2;
+      }
+
+      .work-item {
+        background-color: var(--bg-card);
+        padding: 32px 30px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        border-right: 3px solid var(--accent);
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        transition: transform 0.3s, background-color 0.3s;
+      }
+
+      .work-item:last-child { margin-bottom: 0; }
+      .work-item:hover { transform: translateY(-3px); }
+
+      .poem {
+        font-style: italic;
+        line-height: 2.4;
+        text-align: center;
+        color: #f0e5d0;
+        font-size: 1.1rem;
+      }
+
+      body.light-mode .poem { color: #3a2818; }
+
+      .prose {
+        text-align: justify;
+        color: var(--text-primary);
+        line-height: 2.2;
+        font-size: 1rem;
+      }
+
+      .author {
+        text-align: left;
+        color: var(--accent);
+        font-style: italic;
+        margin-top: 18px;
+        font-weight: 500;
+        font-size: 0.95rem;
+      }
+
+      .contact-section { text-align: center; }
+
+      .social-links {
+        display: flex;
+        gap: 18px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .social-btn {
+        display: inline-block;
+        padding: 12px 35px;
+        border: 1.5px solid var(--accent);
+        color: var(--accent);
+        text-decoration: none;
+        border-radius: 30px;
+        transition: all 0.3s;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+
+      .social-btn:hover {
+        background-color: var(--accent-light);
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(184, 106, 44, 0.5);
+      }
+
+      footer {
+        text-align: center;
+        padding: 25px 0 5px;
+        color: var(--text-muted);
+        font-size: 0.85rem;
+      }
+
+      /* ریسپانسیو موبایل - با مشخص بودن لایه‌ها */
+      @media (max-width: 600px) {
+        body { padding: 15px 10px; }
+        .content-wrapper { 
+          padding: 55px 20px 25px;
+          border: 1px solid var(--divider);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+        }
+        .top-header {
+          top: 15px;
+          left: 15px;
+          right: 15px;
+        }
+        .header-btn {
+          padding: 6px 14px;
+          font-size: 0.85rem;
+        }
+        h1 { font-size: 2rem; }
+        .profile-img { width: 180px; height: 180px; }
+        .work-item { padding: 25px 20px; }
+        .divider { margin: 35px 0; }
+      }
+    </style>
+  </body>
 </html>
